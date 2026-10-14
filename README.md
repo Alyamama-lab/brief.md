@@ -44,3 +44,11 @@ A star schema organizes analytical data around a central fact table connected to
 Resource: Microsoft, Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
+
+Misconception in My Track
+
+A common misconception is that a dedicated 5G network slice is always a completely separate physical network. In reality, network slices can be logical networks built on shared infrastructure, and their isolation may be logical, physical, or a combination of both. The GSMA report discusses 5G network attributes and isolation levels. Therefore, a dedicated slice can support specific service requirements, but emergency-service planning must also consider shared infrastructure failures, coverage, and backup connectivity.
+
+Open Question
+
+How can an operator maintain emergency communications if a shared 5G infrastructure component fails and the dedicated network slice becomes unavailable?

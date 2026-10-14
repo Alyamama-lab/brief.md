@@ -25,4 +25,22 @@ Mobile
 
 An offline-first mobile application should keep essential information available locally when connectivity is lost. It should clearly show whether updates are saved on the device or synchronized with the server. When the connection returns, the application should synchronize pending changes, resolve conflicts using defined rules, and prevent duplicate submissions where possible. For emergency responders, the interface must not imply that an unsent message or update has reached other teams.
 
+Networking
+
+5G network slicing enables multiple logical networks to operate on shared physical infrastructure. Each slice can be configured for particular service requirements, including capacity, quality of service, and isolation. A telecom operator could configure a slice to support emergency responders’ communication needs and manage its resources differently from ordinary consumer traffic. However, slicing does not automatically guarantee uninterrupted service. Reliability also depends on coverage, available capacity, configuration, and resilience against failures in shared infrastructure.
+
+Resource: GSMA, Critical Communications IoT: Technical Analysis of Service Levels - https://www.gsma.com/iot/wp-content/uploads/2019/12/202001_GSMA_IoT_Critical-Comms-Tech-Analysis.pdf
+
+Cybersecurity
+
+Incident response helps organizations manage cybersecurity attacks and reduce their impact. NIST guidance emphasizes preparing for incidents, detecting and analyzing them, taking response actions, and recovering from disruption. During an attack on the 5G service, the operator should identify affected systems, contain the incident, remove its cause where appropriate, restore trusted operations, and review lessons learned. Tested procedures and clear responsibilities help reduce disruption to emergency communications.
+
+Resource: NIST, SP 800-61 Rev. 3 - https://csrc.nist.gov/pubs/sp/800/61/r3/final
+
+Data
+
+A star schema organizes analytical data around a central fact table connected to dimension tables, such as date and region. A snowflake schema normalizes dimensions into additional related tables. For daily service-usage reports by region, a star schema is often practical because its structure is straightforward for analysts and reporting tools to query. The operator should define usage measures clearly and maintain consistent date and regional dimensions to support reliable comparisons.
+
+Resource: Microsoft, Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
+
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
